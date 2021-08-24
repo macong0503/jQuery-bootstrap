@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="f()">按钮</button>
+		<ul id="food">
+			水果标签
+			<li>苹果</li>
+			<li>西瓜</li>
+			<li>葡萄</li>
+			<li id="g">grape</li>
+		</ul>
+		<script src="../../js/jquery-3.6.0.js"></script>
+	    <script>
+		function f(){
+			//$("#food li").eq(1).css("color","red");//eq()取第n个
+			alert($("#g").index());
+		}
+		/* function f(){
+			//遍历：  每个li的内容翻倍
+		     $("#food li").each(function(){
+				$(this).text($(this).text()+$(this).text())
+			});
+			//$("#food").children()取得就是li标签等于$("#food li")
+			//children()取子节点，取不到子节点的子节点
+			$("#food").children().each(function(){
+				$(this).text($(this).text()+$(this).text())
+			});
+			
+		} 
+		*/
+		
+		
+		/* function f(){
+			//$("#food").remove();
+			//$("li").remove(".xxx");
+			//$("#food").empty();//清空内部
+			//console.log($("li").attr("class"));
+			//console.log($("li").removeAttr("class"));
+
+		} */
+		/* function f(){
+			//原生写法
+			var node = document.createElement("li");
+			node.innerText="水蜜桃";
+			document.getElementById("food").appendChild(node);
+			//$("#food").append("<li>水蜜桃</li>")//追加到最后
+			//$("<li>水蜜桃</li>").appendTo("#food")//追加到最后
+			//$("#food").prepend("<li>水蜜桃</li>")//追加到最前 */
+		</script>
+	</body>
+</html>
