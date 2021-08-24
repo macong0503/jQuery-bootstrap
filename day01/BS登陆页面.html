@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<link href="../bootstrap460/css/bootstrap.css" rel="stylesheet"/>
+		<div class="container">
+		<form action="#" method="post">
+			<div class="form-group">
+				<label for="username">账号：</label>
+		    <input type="text" name="username" id="username" class="form-control" placeholder="邮箱/手机号/qq">
+			</div>
+			<div class="form-group">
+				<label for="password">密码：</label>
+		    <input type="password" name="password" id="password" class="form-control" placeholder="六位数字字母组合">
+			</div>
+			<div class="form-group">
+		    年龄：<input type="number" name="age"><br />
+			</div>
+			<div class="form-group">
+		    性别(单选)：<label><input type="radio" name="sex" value="1" checked>男</label> &nbsp;&nbsp;&nbsp;
+		              <input type="radio" name="sex" value="0" id="xxx"><label for="xxx">女</label><br>
+		    </div>
+			<div class="form-group">
+			爱好(多选)：<label><input type="checkbox" name="like" value="1">足球</label>&nbsp;
+		              <label><input type="checkbox" name="like" value="2">篮球</label>&nbsp;
+		              <label><input type="checkbox" name="like" value="3">乒乓球</label><br>
+		    </div>
+			<div class="form-group">
+			<input type="submit" class="btn btn-info">
+		    <!--<button type="button">登录</button>普通按钮-->
+		    <button type="submit" class="btn btn-dark">登录</button><br>
+			</div>
+		</form>
+		</div>
+	</body>
+</html>
